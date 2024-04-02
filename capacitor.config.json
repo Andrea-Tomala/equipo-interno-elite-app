@@ -1,0 +1,9 @@
+{
+  "appId": "com.example.app",
+  "appName": "equipo-interno-elite-app",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}

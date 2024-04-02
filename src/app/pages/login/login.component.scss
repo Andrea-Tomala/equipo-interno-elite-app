@@ -2,3 +2,19 @@
 ion-content{
   --ion-background-color: #1C1C39;
 }
+@media (min-width: 768px) {
+  section.formularios-section{
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .formulario {
+    grid-column: 1 / span 1; /* Ajusta la posición del formulario */
+  }
+  .image{
+    text-align: center;
+    img {
+      width: 100%;
+  }}
+}
+
+

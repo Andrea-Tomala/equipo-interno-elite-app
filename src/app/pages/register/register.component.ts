@@ -19,7 +19,7 @@ export class RegisterComponent  implements OnInit {
       name: new FormControl('', [
         Validators.required,
         Validators.minLength(4),
-        Validators.maxLength(13),
+        Validators.maxLength(20),
       ]),
       correo: new FormControl('', [
         Validators.required

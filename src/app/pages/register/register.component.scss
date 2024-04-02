@@ -11,5 +11,18 @@ p{
   font-size: 14px;
 }
 
-
+@media (min-width: 768px) {
+  section.formularios-section{
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .formulario {
+    grid-column: 1 / span 1; /* Ajusta la posición del formulario */
+  }
+  .image{
+    text-align: center;
+    img {
+      width: 100%;
+  }}
+}
 

@@ -22,15 +22,19 @@ h1, p {
   background-color: #b0b0de;
   cursor:auto;
 }
+
 section.formularios-section{
   display: flex;
   flex-direction: column;
+
   .image{
     text-align: center;
     img {
       max-width: 84%;
   }
   }
+
+
   .formulario{
     padding: 20px 30px;
   }
