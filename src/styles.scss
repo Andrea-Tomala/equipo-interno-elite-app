@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+h1, p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-primary{
+  background-color: #4E4FEB;
+  border-radius: 19px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.btn-primary:disabled{
+  background-color: #b0b0de;
+  cursor:auto;
+}
+section.formularios-section{
+  display: flex;
+  flex-direction: column;
+  .image{
+    text-align: center;
+    img {
+      max-width: 84%;
+  }
+  }
+  .formulario{
+    padding: 20px 30px;
+  }
+  .field-form{
+    display: grid;
+  }
+
+  ion-label{
+    position: relative;
+    display: inline-block;
+    margin: 12px 0px;
+    vertical-align: top;
+    margin-top: 30px;
+  }
+  input {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    height: 42px;
+    padding: 6px 15px;
+    vertical-align: middle;
+    border: solid 1px white;
+    border-radius: 6px;
+    outline: none;
+    background-color: #1C1C39;
+    color: white;
+  }
+  .label {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    left: 12px;
+    top: -11px;
+    color: white;
+    background: #1C1C39;
+    padding: 0px 5px;
+  }
+  ion-icon{
+    color: white;
+    position: absolute;
+    top: 13px;
+    right: 16px;
+  }
+  .text-accede{
+    text-align: center;
+    margin-top: 15px;
+  }
+  a{
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}

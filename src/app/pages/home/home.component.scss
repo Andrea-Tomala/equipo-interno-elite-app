@@ -1,0 +1,65 @@
+ion-content{
+  --ion-background-color: #1C1C39;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.grid-item {
+  border: solid 1px white;
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Por defecto, se muestra en 6 columnas en pantallas grandes */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* En pantallas pequeñas como dispositivos móviles hasta 430px, se muestra en 2 columnas */
+@media (max-width: 431px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.paginacion{
+  margin: 20px 0px 60px 0px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  span{
+    color: white;
+  }
+  ion-button{
+    font-size: 14px;
+  }
+}
+ion-toolbar{
+  --background: #1C1C39;
+  --color: #B0B0DE;
+  text-align: center;
+}
+.alert-title.sc-ion-alert-md {
+  text-align: center !important;
+}
+
+.custom-alert .alert-message {
+  padding: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+}

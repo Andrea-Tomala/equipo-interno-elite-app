@@ -1,0 +1,33 @@
+<ion-content class="ion-padding" [fullscreen]="true">
+  <section class="formularios-section">
+    <div class="image">
+      <img src="" alt="">
+    </div>
+    <div class="formulario">
+      <h1>Inicia sesión</h1>
+      <form [formGroup]="formLogin" (ngSubmit)="signUser()" #formControl="ngForm">
+        <ion-label class="field-form">
+          <input type="text" placeholder="Ingresa tu correo" name="correo"
+        formControlName="correo" />
+        <span  class="label">Correo</span>
+        </ion-label>
+
+        <ion-label class="field-form">
+          <input type="text" placeholder="Ingresa una contraseña" name="password" [type]="showPassword ? 'text': 'password' "
+        formControlName="password" />
+        <ion-icon [name]="showPassword ? 'eye-off-outline': 'eye-outline'" slot="end"
+                  (click)="showPassword = !showPassword"></ion-icon>
+        <span  class="label">Contraseña</span>
+        </ion-label>
+
+        <button type="submit" [disabled]="formLogin.invalid" class="btn-primary" >
+          Accede
+        </button>
+
+
+      </form>
+
+    </div>
+
+  </section>
+</ion-content>

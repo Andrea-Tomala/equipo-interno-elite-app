@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      DIGIMONS
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+  <div class="grid-container">
+    <div *ngFor="let digimon of digimons" class="grid-item" (click)="onDigimonClick(digimon)">
+      <img [src]="digimon.image" alt="Digimon Image">
+      <div># {{digimon.id}}</div>
+      <div>{{digimon.name}}</div>
+    </div>
+  </div>
+
+  <div class="paginacion" *ngIf="totalPages > 1">
+    <ion-button (click)="previousPage()">Previous</ion-button>
+    <span>Page {{ pageNumber }} of {{ totalPages }}</span>
+    <ion-button (click)="nextPage()">Next</ion-button>
+  </div>
+
+</ion-content>

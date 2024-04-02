@@ -1,0 +1,42 @@
+<ion-content class="ion-padding" [fullscreen]="true">
+  <section class="formularios-section">
+    <div class="image">
+      <img src="../../../assets/register-banner.png" alt="">
+    </div>
+    <div class="formulario">
+      <h1>Crea una cuenta</h1>
+      <p>Empecemos!</p>
+      <form [formGroup]="formRegister" (ngSubmit)=" createUser()" #formControl="ngForm">
+        <ion-label class="field-form">
+          <input type="text" placeholder="Ingresa tu nombre" name="name" maxlength="13"
+        formControlName="name" />
+        <span  class="label">Nombre</span>
+        </ion-label>
+
+        <ion-label class="field-form">
+          <input type="text" placeholder="Ingresa tu correo" name="correo"
+        formControlName="correo" />
+        <span  class="label">Correo</span>
+        </ion-label>
+
+        <ion-label class="field-form">
+          <input type="text" placeholder="Ingresa una contraseña" name="password" [type]="showPassword ? 'text': 'password' "
+        formControlName="password" />
+        <ion-icon [name]="showPassword ? 'eye-off-outline': 'eye-outline'" slot="end"
+                  (click)="showPassword = !showPassword"></ion-icon>
+        <span  class="label">Contraseña</span>
+        </ion-label>
+
+        <button type="submit" [disabled]="formRegister.invalid" class="btn-primary" >
+          Registrarse
+        </button>
+
+        <p class="text-accede">¿Ya tienes una cuenta? <a (click)="logIn()">Accede</a> </p>
+
+
+      </form>
+
+    </div>
+
+  </section>
+</ion-content>
