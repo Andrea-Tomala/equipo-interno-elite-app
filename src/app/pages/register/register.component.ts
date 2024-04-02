@@ -44,7 +44,7 @@ export class RegisterComponent  implements OnInit {
             next: (dataAuthorized) => {
               console.log(dataAuthorized);
               if(dataAuthorized.code ==200){
-                this.presentAlertSuccess(dataAuthorized.message);
+                this.presentAlertSuccess(dataAuthorized.message+' '+ 'A continuación inicia sesión');
               }
             },
             error: (errorData) => {
