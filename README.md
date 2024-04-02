@@ -20,6 +20,7 @@ npm install
 En el archivo readme del api python se explica generación url HTTPS:
 
 Esta ruta se reemplaza en las url del archvio environment.prod.ts del front, ejemplo:
+Estas rutas https son un ejemplo ya que son dinámicas y cambian al iniciar ngrok.
 apiUrlRegisterUser: 'https://4c9b-2800-bf0-82ab-149-8d3a-88e3-f54e-4818.ngrok-free.app/register',
 apiUrlLoginUser: 'https://4c9b-2800-bf0-82ab-149-8d3a-88e3-f54e-4818.ngrok-free.app/login',
 
