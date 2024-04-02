@@ -16,7 +16,7 @@ npm install
 
 2. Ejecute sitio en web: ng serve
 
-APK
+# APK
 En el archivo readme del api python se explica generación url HTTPS:
 
 Esta ruta se reemplaza en las url del archvio environment.prod.ts del front, ejemplo:
@@ -30,9 +30,9 @@ ionic capacitor sync (actualizar cambios)
 npx cap open android (abre aplicacion android studio con proyecto cargado)
 
 En android studio:
-1.Menú superior file -- build -- clean proyect
-2.Menú superior file -- build--make project
-3.Mení superior file -- build --- buil bundle apk -- build apk
+1.Menú superior  build -- clean proyect
+2.Menú superior  build--make project
+3.Mení superior  build --- buil bundle apk -- build apk
 
 Y se genera apk instalable con  api actualizadas para registro y login
 1.Regístrese con nombre, correo y contraseña.
