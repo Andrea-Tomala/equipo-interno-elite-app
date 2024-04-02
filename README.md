@@ -38,3 +38,5 @@ Y se genera apk instalable con  api actualizadas para registro y login
 1.Regístrese con nombre, correo y contraseña.
 2.Se muestra alerta registro exitoso e inicie sesión con sus credenciales de correo y contraseña
 3.Con sesión exitosa ingresa automáticamente a la lista de "Digimons"
+
+Nota: si se generó apk (se comparte url en correo adjunto), pero api de registro y login es bloqueado por android por http.
